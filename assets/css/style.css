@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ebebeb;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+
+.container{
+    width: 580px;
+    height: 350px;
+    border-radius: 25px;
+    background-color: #2e7eff;
+    box-shadow: 5px 5px 25px #00000050;
+    text-align: center;
+    padding: 25px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.section{
+    width: auto;
+    height: auto;
+    margin: 15px auto 15px auto;
+    display: flex;
+}
+
+.container h1{
+    font-family: 'DynaPuff', cursive;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.container h5{
+    font-family: 'Roboto', cursive;
+    color: #1eff00;
+}
+
+#inputpass{
+    width: 100%;
+    font-size: 35pt;
+    border-radius: 15px 0 0 15px;
+    padding: 7px;
+    padding-left: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    border: none;
+}
+
+#inputpass:focus{
+    outline: none;
+}
+
+#btn_see_pass{
+    padding: 10px;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    font-size: 18pt;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    background-color: #f9c51a;
+    width: 180px;
+}
+
+#btn_tutorial{
+    margin-top: 15px;
+    padding: 5px 35px 5px 35px;
+    border: none;
+    border-radius: 15px ;
+    font-size: 10pt;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    background-color: #a56cc6;
+}
+
+#btn_radom{
+    margin-top: 15px;
+    padding: 15px 45px 15px 45px;
+    border: none;
+    border-radius: 15px ;
+    font-size: 10pt;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    background-color: #a56cc6;
+}
+
+
+#btn_see_pass:hover{
+    background-color: #e2b318;
+}
+
+#progress-bar {
+    height: 20px;
+    background-color: #ddd;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+#progress-bar-fill {
+    height: 100%;
+    background-color: #ff5757;
+    width: 2%;
+    transition: width 0.2s ease;
+    border-radius: 5px;
+
+}
+
+#rangeValue{
+    font-family: 'Roboto', sans-serif;
+    color: #FFF;
+    font-size: 14pt;
+}
+
+/*********** Baseline, reset styles ***********/
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Removes default focus */
+  input[type="range"]:focus {
+    outline: none;
+  }
+  
+  /******** Chrome, Safari, Opera and Edge Chromium styles ********/
+  /* slider track */
+  input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #a56cc6;
+    border-radius: 4.5rem;
+    height: 0.5rem;
+  }
+  
+  /* slider thumb */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    margin-top: -8px; /* Centers thumb on the track */
+    background-color: #7c009e;
+    border-radius: 1rem;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  
+  input[type="range"]:focus::-webkit-slider-thumb {
+    outline: 3px solid #7c009e;
+    outline-offset: 0.125rem;
+  }
+  
+  /*********** Firefox styles ***********/
+  /* slider track */
+  input[type="range"]::-moz-range-track {
+    background-color: #a56cc6;
+    border-radius: 4.5rem;
+    height: 0.5rem;
+  }
+  
+  /* slider thumb */
+  input[type="range"]::-moz-range-thumb {
+    background-color: #7c009e;
+    border: none; /*Removes extra border that FF applies*/
+    border-radius: 1rem;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  
+  input[type="range"]:focus::-moz-range-thumb{
+    outline: 3px solid #7c009e;
+    outline-offset: 0.125rem;
+  }
